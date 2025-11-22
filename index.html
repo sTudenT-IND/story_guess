@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🔤 Text Adventure Game</title>
+  <link rel="stylesheet" href="storyGuess.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1>🌲 Text Adventure Game</h1>
+    <p id="story">You find yourself at a fork in a magical forest. Do you go left or right?</p>
+
+    <div class="choices">
+      <button onclick="makeChoice('left')">⬅️ Left</button>
+      <button onclick="makeChoice('right')">➡️ Right</button>
+    </div>
+
+    <div id="next-choices" class="choices hidden"></div>
+    <div id="restart" class="hidden">
+      <button onclick="restartGame()">🔁 Restart</button>
+    </div>
+  </div>
+
+  <script src="storyGuess.js"></script>
+</body>
+</html>
